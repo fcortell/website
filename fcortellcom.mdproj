@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{95E0075D-8499-463C-A0F6-4D4768F856EA}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="index.html" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="web\me.html" />
+    <None Include="web\projects.html" />
+    <None Include="web\opensource.html" />
+    <None Include="web\tvguia.html" />
+    <None Include="web\assets\open_source.svg" />
+    <None Include="web\assets\about_me.svg" />
+    <None Include="web\assets\application.css" />
+    <None Include="web\assets\projects.svg" />
+    <None Include="web\assets\welcome.svg" />
+    <None Include="web\assets\blog.svg" />
+    <None Include="web\assets\menu.svg" />
+    <None Include="web\assets\covers\me.jpg" />
+    <None Include="web\assets\covers\tvguia.jpg" />
+    <None Include="web\assets\covers\projects.jpg" />
+    <None Include="web\assets\covers\opensource.jpg" />
+    <None Include="web\assets\img\3_3.jpg" />
+    <None Include="web\assets\img\1_1.jpg" />
+    <None Include="web\assets\img\4.jpg" />
+    <None Include="web\assets\img\2_2.jpg" />
+    <None Include="web\assets\img\4_4.jpg" />
+    <None Include="web\assets\img\TVGuideIcon_RCx512R_Transp.png" />
+    <None Include="web\assets\img\2.jpg" />
+    <None Include="web\assets\img\3.jpg" />
+    <None Include="web\assets\img\1.jpg" />
+    <None Include="web\assets\social\github.png" />
+    <None Include="web\assets\social\twitter.png" />
+    <None Include="web\assets\social\linkedin.png" />
+  </ItemGroup>
+</Project>
