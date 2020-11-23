@@ -57,5 +57,9 @@
     <None Include="web\etr.html" />
     <None Include="web\hsj.html" />
     <None Include="web\warzoneintel.html" />
+    <None Include="web\assets\img\appstore.png" />
+    <None Include="web\assets\img\playstore.png" />
+    <None Include="web\tac.html" />
+    <None Include="web\assets\img\tac\TACTICAL_INSTINCT_logo_FULL.png" />
   </ItemGroup>
 </Project>

@@ -311,6 +311,20 @@ div.desc {
   text-align: center;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .homePage {
   background: #2B3034;
   color: #fff
@@ -608,6 +622,18 @@ div.desc {
 
 .postPage__coverImage--tvguia {
   background-image: url(covers/tvguia.jpg)
+}
+
+.postPage__coverImage--warzoneintel {
+    background-image: url(img/warzoneintel/warzoneintel1.png)
+}
+
+.postPage__coverImage--hsj {
+    background-image: url(img/hsj/hsj1.png)
+}
+
+.postPage__coverImage--etr {
+    background-image: url(img/etr/etr1.png);
 }
 
 .postPage.page .postPage__date {
