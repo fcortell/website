@@ -40,5 +40,22 @@
     <None Include="web\assets\social\github.png" />
     <None Include="web\assets\social\twitter.png" />
     <None Include="web\assets\social\linkedin.png" />
+    <None Include="web\assets\img\etr\etr5.png" />
+    <None Include="web\assets\img\etr\etr4.png" />
+    <None Include="web\assets\img\etr\etr1.png" />
+    <None Include="web\assets\img\etr\etr3.png" />
+    <None Include="web\assets\img\etr\etr2.png" />
+    <None Include="web\assets\img\hsj\hsj4.png" />
+    <None Include="web\assets\img\hsj\hsj1.png" />
+    <None Include="web\assets\img\hsj\hsj2.png" />
+    <None Include="web\assets\img\hsj\hsj3.png" />
+    <None Include="web\assets\img\warzoneintel\warzoneintel1.png" />
+    <None Include="web\assets\img\warzoneintel\warzoneintel3.png" />
+    <None Include="web\assets\img\warzoneintel\warzoneintel2.png" />
+    <None Include="web\assets\img\warzoneintel\warzoneintel5.png" />
+    <None Include="web\assets\img\warzoneintel\warzoneintel4.png" />
+    <None Include="web\etr.html" />
+    <None Include="web\hsj.html" />
+    <None Include="web\warzoneintel.html" />
   </ItemGroup>
 </Project>
