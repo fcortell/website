@@ -585,7 +585,7 @@ div.desc {
 }
 
 .postPage__coverImage {
-  height: 300px;
+  height: 400px;
   margin: 40px -70px;
   background: #E8F4FE;
   border-radius: 0 8px 8px 0;
@@ -599,7 +599,7 @@ div.desc {
 }
 
 .postPage__coverImage--me {
-  background-image: url(covers/me.jpg)
+  background-image: url(covers/camping.jpg)
 }
 
 .postPage__coverImage--projects {
