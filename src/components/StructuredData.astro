@@ -17,7 +17,7 @@ if (type === "BlogPosting") {
     author: {
       "@type": "Person",
       name: data.author || "Fermin Corteller",
-      url: "https://fcortell.me/about",
+      url: "https://fcortell.com/about",
     },
     datePublished: data.pubDatetime.toISOString(),
     dateModified: data.modDatetime?.toISOString() || data.pubDatetime.toISOString(),
@@ -26,14 +26,14 @@ if (type === "BlogPosting") {
       name: "Fermin Corteller",
       logo: {
         "@type": "ImageObject",
-        url: "https://fcortell.me/fermin-avatar.jpg",
+        url: "https://fcortell.com/fermin-avatar.jpg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": data.url,
     },
-    image: data.ogImage || "https://fcortell.me/fermin-avatar.jpg",
+    image: data.ogImage || "https://fcortell.com/fermin-avatar.jpg",
     articleSection: data.tags?.[0] || "Technology",
     keywords: data.tags?.join(", ") || "",
     wordCount: data.wordCount,
@@ -44,12 +44,12 @@ if (type === "BlogPosting") {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Fermin Corteller",
-    url: "https://fcortell.me",
-    image: "https://fcortell.me/fermin-avatar.jpg",
+    url: "https://fcortell.com",
+    image: "https://fcortell.com/fermin-avatar.jpg",
     sameAs: [
       "https://github.com/fcortell",
       "https://twitter.com/fcortell",
-      "https://bsky.app/profile/fcortell.me",
+      "https://bsky.app/profile/fcortell.com",
     ],
     jobTitle: "Software Engineer",
     description:
@@ -60,7 +60,7 @@ if (type === "BlogPosting") {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Fermin Corteller",
-    url: "https://fcortell.me",
+    url: "https://fcortell.com",
     description:
       "AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub for you to fork & remix.",
     author: {
@@ -69,7 +69,7 @@ if (type === "BlogPosting") {
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://fcortell.me/search?q={search_term_string}",
+      target: "https://fcortell.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
