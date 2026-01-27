@@ -14,31 +14,43 @@ const { variant = "default" } = Astro.props;
   )}
   
   <form
-    action="https://buttondown.com/api/emails/embed-subscribe/fcortell"
+    id="newsletter-form"
+    action="https://f6d15b94.sibforms.com/serve/MUIFACPcFVEw2AEKKjxPfl1PSmMUGAR3Qu9KgaBzvPJjNgPjCM4_d10kbeOMJdbQJ-pXI9BZQnOvmd-FZXARTuRYOaLqvhu7Moal3tQD6uSWHsKy1eg61ya89aVdxkYW7f8trQKU0w3fyiIKb2ztwF4lHXb1CNaypyfoD4X3Rfm2GHIPSI9enBTXEqoEcbbho-R7h0FEWbF-ZeYQTQ=="
     method="post"
     target="_blank"
     class="flex flex-col sm:flex-row gap-3"
   >
-    <input type="hidden" name="tag" value="fcortell" />
+    <input type="hidden" name="email_address_check" value="" />
+    <input type="hidden" name="locale" value="en" />
+    <input type="hidden" name="html_type" value="simple" />
+
     <input
       type="text"
-      name="name"
+      name="FIRSTNAME"
       placeholder="Your Name"
       class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
     />
     <input
       type="email"
-      name="email"
+      name="EMAIL"
       placeholder="Your Email"
       required
       class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
     />
     <button
+      id="newsletter-btn"
       type="submit"
-      class="px-6 py-2 bg-accent rounded-md hover:bg-accent/90 transition-colors font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+      class="px-6 py-2 bg-accent rounded-md hover:bg-accent/90 transition-colors font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 disabled:opacity-50"
       style="color: white;"
     >
-      Subscribe
+      <span id="btn-text">Subscribe</span>
+      <span id="btn-loading" class="hidden">
+        <svg class="animate-spin -ml-1 mr-1 h-4 w-4 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Subscribing...
+      </span>
     </button>
   </form>
   
@@ -48,6 +60,62 @@ const { variant = "default" } = Astro.props;
     </p>
   )}
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('newsletter-form');
+    const submitBtn = document.getElementById('newsletter-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnLoading = document.getElementById('btn-loading');
+    
+    if (form && submitBtn && btnText && btnLoading) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        submitBtn.disabled = true;
+        btnText.classList.add('hidden');
+        btnLoading.classList.remove('hidden');
+        
+        // Create a temporary form to submit to SibForms in hidden iframe
+        const tempForm = document.createElement('form');
+        tempForm.action = form.action;
+        tempForm.method = form.method;
+        tempForm.target = 'hidden-iframe';
+        tempForm.style.display = 'none';
+        
+        // Copy form data
+        const formData = new FormData(form);
+        formData.forEach((value, key) => {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = value;
+          tempForm.appendChild(input);
+        });
+        
+        // Create hidden iframe
+        const iframe = document.createElement('iframe');
+        iframe.name = 'hidden-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        document.body.appendChild(tempForm);
+        
+        // Submit form
+        tempForm.submit();
+        
+        // Clean up and redirect after a short delay
+        setTimeout(() => {
+          document.body.removeChild(iframe);
+          document.body.removeChild(tempForm);
+          
+          // Redirect to confirmation page
+          window.location.href = '/newsletter-confirmation';
+        }, 1500);
+      });
+    }
+  });
+</script>
 
 <style>
   @media (max-width: 640px) {
