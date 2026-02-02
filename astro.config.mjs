@@ -103,7 +103,7 @@ export default defineConfig({
       manifest: {
         name: "Fermin Cortell",
         short_name: "fcortell",
-        description: "AI-powered tools from Swift roots to web frontiers. Everything I build is open source.",
+        description: "Full stack software developer turned outdoorsman.",
         theme_color: "#006cac",
         background_color: "#fdfdfd",
         display: "standalone",
