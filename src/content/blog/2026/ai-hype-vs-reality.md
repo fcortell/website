@@ -33,7 +33,7 @@ when you can generate features at the speed of thought, you stop saying no. the 
 
 ## why isn't claude code in fast take off mode?
 
-anthropic boasts that claude code is completely claude-coded. if the machine is writing the machine, the rate of product improvement should be a compounding function ($$y = e^{cx}$$).
+anthropic boasts that claude code is completely claude-coded. if the machine is writing the machine, the rate of product improvement should be a compounding function (y = e^(cx), exponential growth).
 
 if that were true, anthropic's 7-month head start should have created an unbridgeable gap between them and competitors like codex or cursor. instead, everyone is still debating which tool is better. that's the canary.
 
