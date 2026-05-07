@@ -1,6 +1,6 @@
 ---
 title: "AI Hype vs Reality"
-description: "A summary of Ethan Ding's insights on why respected engineers are pushing back on the AI coding agent hype cycle, the K-shaped productivity curve, and why more code often just means more[...]
+description: "A summary of Ethan Ding's insights on why respected engineers are pushing back on the AI coding agent hype cycle, the K-shaped productivity curve, and why more code often just means more technical debt"
 pubDatetime: '2026-05-07'
 author: 'Fermín Cortell'
 featured: true
@@ -13,13 +13,13 @@ tags: ['ai', 'development', 'claude', 'automation', 'productivity', 'agentic-cod
 
 ---
 
-something interesting is happening. the loudest voices in the room are telling you that ai coding agents changed everything. the engineers who actually built the things you use every day are telling y[...]
+something interesting is happening. the loudest voices in the room are telling you that ai coding agents changed everything. the engineers who actually built the things you use every day are telling you something different.
 
 ## the k-shaped productivity curve
 
 labor economists are seeing a k-shaped reality: senior engineers using ai are getting meaningfully more productive, while junior engineers are treading water or getting worse. 
 
-the popular venture-backed narrative ignores the bottom half of that k, boasting about teams "clearing six years of backlog in a quarter" or building whole backends in three days. but while agentic co[...]
+the popular venture-backed narrative ignores the bottom half of that k, boasting about teams "clearing six years of backlog in a quarter" or building whole backends in three days. but while agentic coding produces code faster, it doesn't produce better code faster.
 
 **if engineers are more productive, the rate at which product improves per engineer should be going up.**
 
@@ -35,7 +35,7 @@ when you can generate features at the speed of thought, you stop saying no. the 
 
 anthropic boasts that claude code is completely claude-coded. if the machine is writing the machine, the rate of product improvement should be a compounding function ($$y = e^{cx}$$).
 
-if that were true, anthropic's 7-month head start should have created an unbridgeable gap between them and competitors like codex or cursor. instead, everyone is still debating which tool is better. t[...]
+if that were true, anthropic's 7-month head start should have created an unbridgeable gap between them and competitors like codex or cursor. instead, everyone is still debating which tool is better. that's the canary.
 
 that's not how you'd expect exponential improvement to look.
 
@@ -43,7 +43,7 @@ that's not how you'd expect exponential improvement to look.
 
 the best engineering cultures treat lines of code as a liability on the balance sheet, not an asset. every line is a surface for bugs; every feature creates dependencies. 
 
-take linear vs. jira. linear has a fraction of the headcount and codebase size, but infinitely better consumer quality. facebook isn't constrained by UI code production – it's constrained by deliver[...]
+take linear vs. jira. linear has a fraction of the headcount and codebase size, but infinitely better consumer quality. facebook isn't constrained by UI code production – it's constrained by deliverability at scale.
 
 the constraint was never "write code faster." the constraint was always "figure out what's worth building."
 
@@ -51,7 +51,7 @@ the constraint was never "write code faster." the constraint was always "figure 
 
 product quality at the frontier isn't bounded by how fast you write code. it's bounded by how fast you come up with ideas good enough to push the frontier.
 
-that kind of quality emerges from *taste* – from the painful, slow decision to build less. a backlog full of CRUD features is exactly what ai accelerates, but shipping faster doesn't make your produ[...]
+that kind of quality emerges from *taste* – from the painful, slow decision to build less. a backlog full of CRUD features is exactly what ai accelerates, but shipping faster doesn't make your product better.
 
 ### the ai productivity paradox
 
