@@ -275,6 +275,6 @@ Adopt DPoP when the token is the thing most likely to leak and the client is a p
 
 Skip it when the AS cannot issue DPoP-bound tokens (then you literally cannot), when your tokens already never leave a locked-down server-to-server channel with mTLS, or when your team cannot afford the operational cost of replay caches and nonces for a threat you have already mitigated elsewhere.
 
-The honest summary: DPoP does not make your system secure. It makes one specific, very common failure — the stolen token — stop working. That is a narrow promise, and exactly why it is worth taking seriously.
+Summary: DPoP does not make your system secure. It makes one specific, very common failure — the stolen token — stop working. That is a narrow promise, and exactly why it is worth taking seriously.
 
 Bearer tokens solved authentication by making it dumb. DPoP adds back the one property that dumbness cost us: the token only works for the hand that holds the key.
