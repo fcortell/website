@@ -1,7 +1,7 @@
 ---
 title: "Beyond Bearer Tokens: DPoP in Practice, with C#"
 description: "Bearer tokens are a password in a coat: whoever holds them, wins. DPoP (RFC 9449) binds tokens to a key the client must prove it owns. Pros, cons, a reference scheme, and how to implement it in .NET."
-pubDatetime: '2026-10-22'
+pubDatetime: '2026-10-23'
 author: 'Fermín Cortell'
 featured: false
 tags: ['security', 'oauth', 'dpop', 'authentication', 'dotnet', 'csharp']
