@@ -7,7 +7,6 @@ import Datetime from "@/components/Datetime.astro";
 import EditPost from "@/components/EditPost.astro";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
-import NewsletterForm from "@/components/NewsletterForm.astro";
 import ShareLinks from "@/components/ShareLinks.astro";
 import StructuredData from "@/components/StructuredData.astro";
 import Tag from "@/components/Tag.astro";
@@ -56,13 +55,11 @@ if (!ogImageUrl && SITE.dynamicOgImage) {
 }
 
 // Resolve OG image URL (or fallback to SITE.ogImage / default `og.png`)
-const ogImage = ogImageUrl ? new URL(ogImageUrl, Astro.url.origin).href : undefined;
+const ogImage = ogImageUrl ? new URL(ogImageUrl, Astro.site ?? SITE.website).href : undefined;
 
 // Generate the canonical URL - always use the full path with year
 const postPath = getPath(post.id, post.filePath, true);
-const computedCanonicalURL =
-  canonicalURL ||
-  (Astro.site ? new URL(postPath, Astro.site).href : new URL(postPath, Astro.url.origin).href);
+const computedCanonicalURL = new URL(canonicalURL ?? postPath, Astro.site ?? SITE.website).href;
 
 const layoutProps = {
   title: `${title} | ${SITE.title}`,
@@ -100,11 +97,10 @@ const wordCount = (post.body ?? "").split(/\s+/).length;
       author,
       pubDatetime,
       modDatetime,
-      url: Astro.url.href,
+      url: computedCanonicalURL,
       ogImage,
       tags,
-      wordCount,
-      readingTime
+      wordCount
     }} 
   />
   <Header />
@@ -150,8 +146,6 @@ const wordCount = (post.body ?? "").split(/\s+/).length;
       }
       <Content />
     </article>
-
-    <NewsletterForm />
 
     <hr class="my-8 border-dashed" />
 

@@ -68,7 +68,7 @@ const { variant = "default" } = Astro.props;
     const btnText = document.getElementById('btn-text');
     const btnLoading = document.getElementById('btn-loading');
     
-    if (form && submitBtn && btnText && btnLoading) {
+    if (form instanceof HTMLFormElement && submitBtn instanceof HTMLButtonElement && btnText && btnLoading) {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -90,7 +90,7 @@ const { variant = "default" } = Astro.props;
           const input = document.createElement('input');
           input.type = 'hidden';
           input.name = key;
-          input.value = value;
+          input.value = String(value);
           tempForm.appendChild(input);
         });
         

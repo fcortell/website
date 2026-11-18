@@ -1,79 +1,76 @@
 ---
-export interface Props {
-  type: "BlogPosting" | "Person" | "WebSite";
-  data: any;
-}
+import { SITE } from "@/config";
 
-const { type, data } = Astro.props;
+type Props =
+  | {
+      type: "BlogPosting";
+      data: {
+        title: string;
+        description: string;
+        author: string;
+        pubDatetime: Date;
+        modDatetime?: Date | null;
+        url: string;
+        ogImage?: string;
+        tags: string[];
+        wordCount: number;
+      };
+    }
+  | { type: "Person" | "WebSite" };
 
-let structuredData = {};
+const siteURL = new URL(SITE.website);
+const person = {
+  "@type": "Person",
+  name: SITE.author,
+  url: new URL("/about", siteURL).href,
+};
 
-if (type === "BlogPosting") {
+let structuredData: Record<string, unknown>;
+
+if (Astro.props.type === "BlogPosting") {
+  const { data } = Astro.props;
   structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: data.title,
     description: data.description,
-    author: {
-      "@type": "Person",
-      name: data.author || "Fermin Corteller",
-      url: "https://fcortell.com/about",
-    },
+    author: data.author === SITE.author ? person : { "@type": "Person", name: data.author },
     datePublished: data.pubDatetime.toISOString(),
-    dateModified: data.modDatetime?.toISOString() || data.pubDatetime.toISOString(),
-    publisher: {
-      "@type": "Person",
-      name: "Fermin Corteller",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://fcortell.com/fermin-avatar.jpg",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": data.url,
-    },
-    image: data.ogImage || "https://fcortell.com/fermin-avatar.jpg",
-    articleSection: data.tags?.[0] || "Technology",
-    keywords: data.tags?.join(", ") || "",
+    dateModified: (data.modDatetime ?? data.pubDatetime).toISOString(),
+    publisher: person,
+    mainEntityOfPage: { "@type": "WebPage", "@id": data.url },
+    image: data.ogImage ?? new URL(SITE.ogImage, siteURL).href,
+    keywords: data.tags.join(", "),
     wordCount: data.wordCount,
-    timeRequired: data.readingTime,
   };
-} else if (type === "Person") {
+} else if (Astro.props.type === "Person") {
   structuredData = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Fermin Corteller",
-    url: "https://fcortell.com",
-    image: "https://fcortell.com/fermin-avatar.jpg",
+    ...person,
+    image: new URL(SITE.ogImage, siteURL).href,
     sameAs: [
       "https://github.com/fcortell",
       "https://twitter.com/fcortell",
       "https://bsky.app/profile/fcortell.com",
     ],
     jobTitle: "Software Engineer",
-    description:
-      "Full stack software developer turned outdoorsman.",
+    description: "Full stack software developer turned outdoorsman.",
   };
-} else if (type === "WebSite") {
+} else {
   structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Fermin Corteller",
-    url: "https://fcortell.com",
-    description:
-      "Full stack software developer turned outdoorsman.",
-    author: {
-      "@type": "Person",
-      name: "Fermin Corteller",
-    },
+    name: SITE.title,
+    url: siteURL.href,
+    description: "Full stack software developer turned outdoorsman.",
+    author: person,
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://fcortell.com/search?q={search_term_string}",
+      target: new URL("/search?q={search_term_string}", siteURL).href,
       "query-input": "required name=search_term_string",
     },
   };
 }
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData).replace(/</g, "\\u003c")} />

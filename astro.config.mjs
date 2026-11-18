@@ -31,6 +31,8 @@ export default defineConfig({
     mdx(),
 	    sitemap({
 	      filter: (page) => {
+          const pathname = new URL(page).pathname;
+          if (pathname === "/blog" || pathname.startsWith("/blog/") || /^\/posts\/\d{4}\/old\//.test(pathname)) return false;
 	        // Always exclude archives if not showing them
 	        if (!SITE.showArchives && page.endsWith("/archives")) return false;
         

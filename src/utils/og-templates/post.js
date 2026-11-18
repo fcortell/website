@@ -8,9 +8,9 @@ import loadGoogleFonts from "../loadGoogleFont";
  * This template generates social media preview cards for blog posts.
  *
  * CUSTOMIZATION: We override the default behavior to show "fcortell.com"
- * on the right side instead of the author name (Fermin Corteller).
+ * on the right side instead of the author name (Fermin Cortell).
  * This avoids redundancy since the author name already appears on the left
- * with "by Fermin Corteller".
+ * with "by Fermin Cortell".
  */
 
 // const markup = html`<div

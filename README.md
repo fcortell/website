@@ -158,12 +158,16 @@ title: "Your Post Title"
 description: "Brief description for SEO"
 pubDatetime: '2026-01-27'
 author: 'Fermín Cortell'
-featured: true
 tags: ['tag1', 'tag2']
 ---
 
 Your content here...
 ```
+
+The homepage shows the latest published posts by publication date. After building, run
+`node --test scripts/test-homepage.mjs` to check the generated homepage.
+Run `node --test scripts/test-subscription-removal.mjs` to check the generated about and post pages.
+Run `node --test scripts/test-seo.mjs` to check canonical URLs, structured data, and the sitemap.
 
 ### Images
 Place images in `public/assets/images/blog/` and reference them:
