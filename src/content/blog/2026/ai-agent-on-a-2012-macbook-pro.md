@@ -9,9 +9,9 @@ tags: ['ai', 'agentic-coding', 'automation', 'gadgets', 'technology']
 
 I have an AI agent. Its name is Sonny, it runs on a 2012 MacBook Pro that started its life as my university laptop, and I talk to it from Telegram. It writes drafts, checks mail, files things, and occasionally tells me that a task I thought was finished never actually was.
 
-![A display bust of Sonny, the NS-5 robot from I, Robot, with a pale sculpted face, blue eyes and exposed neck cables](/assets/images/blog/agent-setup/sonny-irobot-head.jpg)
+![Sonny, the silver NS-5 robot, walking down a corridor beside Will Smith's character in I, Robot](/assets/images/blog/agent-setup/sonny-irobot-still.jpg)
 
-*The name is borrowed: Sonny is the NS-5 from I, Robot who spends the film asking whether he is more than what he was built for. A fair description of a shell script with opinions. Photo: [Shao19](https://commons.wikimedia.org/wiki/File:Irobot_head.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons.*
+*The name is borrowed: Sonny is the NS-5 from I, Robot who spends the film asking whether he is more than what he was built for. A fair description of a shell script with opinions. Frame from I, Robot (2004), © Twentieth Century Fox — reproduced for commentary.*
 
 The interesting part is not that it exists. It is how little hardware it needs.
 
