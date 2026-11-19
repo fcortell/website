@@ -9,6 +9,10 @@ tags: ['james-bond', '007', 'movies', 'pop-culture']
 
 [Robert Pattinson is the next James Bond](https://www.aboutamazon.com/news/entertainment/james-bond-robert-pattinson-cast-amazon-mgm-film). I think he's a good choice. I also suspect that by the time we see him order a drink, the Bond corner of the internet will have spent several hundred hours deciding whether he looks like a man who knows how to order one.
 
+![Robert Pattinson on a festival red carpet in a pale double-breasted suit and dark tie](/assets/images/blog/james-bond/robert-pattinson-venice.jpg)
+
+*Robert Pattinson at the Venice Film Festival. Photo: [Colleen Sturtevant](https://commons.wikimedia.org/wiki/File:Robert_Pattinson_Venice_Film_Festival.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons.*
+
 ## The qualified enthusiasm of the very big fan
 
 You can almost hear the first episode: *Obviously he's a talented actor. I just have a few reservations.* Fair enough. I'd have reservations about anyone taking over a role this familiar. What makes me laugh is how often a perfectly ordinary first impression gets presented as the verdict the rest of us have been waiting for.
@@ -20,6 +24,10 @@ And there isn't much of a video in saying, *Sounds promising. See you at the cin
 ## Why Pattinson makes sense to me
 
 In *Tenet*, Pattinson strolls into a baffling situation and somehow makes it seem rude to ask whether he knows what he's doing. In *The Batman*, he's almost the opposite: tense, watchful and not particularly interested in making anyone comfortable. I can see both qualities in Bond. He should be able to make you feel at ease at a dinner table while leaving you slightly worried about what happens when the other guests go home.
+
+![Robert Pattinson at a press conference, holding a microphone, in a casual dark t-shirt](/assets/images/blog/james-bond/robert-pattinson-berlinale-2018.jpg)
+
+*Robert Pattinson at the Berlinale in 2018. Photo: [Martin Kraft](https://commons.wikimedia.org/wiki/File:MJK_08789_Robert_Pattinson_(Damsel,_Berlinale_2018).jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons.*
 
 There's also a difference between liking an actor for the part and wanting him to do an impression of the last one. Daniel Craig made a Bond I didn't know I wanted until I saw him play cards in *Casino Royale*. I'd rather see what Pattinson and Denis Villeneuve come up with than watch them try to meet a checklist assembled from six decades of other people's performances.
 
