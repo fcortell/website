@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="t2 d2">
+  <title id="t2">The task loop: message, plan, tool call, verification, user confirmation, log</title>
+  <desc id="d2">A six-step horizontal cycle from an incoming message through planning, tool execution and verification to a yes-or-no confirmation from the user and an entry in the achievements log.</desc>
+  <rect x="0" y="0" width="960" height="300" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" fill="#0f172a">
+    <g>
+      <rect x="28" y="118" width="130" height="64" rx="10" fill="#ffffff" stroke="#94a3b8"/>
+      <text x="93" y="146" text-anchor="middle" font-size="13.5" font-weight="600">Message</text>
+      <text x="93" y="166" text-anchor="middle" font-size="11.5" fill="#64748b">Telegram</text>
+    </g>
+    <g>
+      <rect x="188" y="118" width="130" height="64" rx="10" fill="#ffffff" stroke="#94a3b8"/>
+      <text x="253" y="146" text-anchor="middle" font-size="13.5" font-weight="600">Plan</text>
+      <text x="253" y="166" text-anchor="middle" font-size="11.5" fill="#64748b">pick a skill</text>
+    </g>
+    <g>
+      <rect x="348" y="118" width="130" height="64" rx="10" fill="#eef2ff" stroke="#6366f1"/>
+      <text x="413" y="146" text-anchor="middle" font-size="13.5" font-weight="600">Tool call</text>
+      <text x="413" y="166" text-anchor="middle" font-size="11.5" fill="#475569">shell, files, mail</text>
+    </g>
+    <g>
+      <rect x="508" y="118" width="130" height="64" rx="10" fill="#ffffff" stroke="#94a3b8"/>
+      <text x="573" y="146" text-anchor="middle" font-size="13.5" font-weight="600">Verify</text>
+      <text x="573" y="166" text-anchor="middle" font-size="11.5" fill="#64748b">read it back</text>
+    </g>
+    <g>
+      <rect x="668" y="118" width="130" height="64" rx="10" fill="#ffffff" stroke="#0ea5e9"/>
+      <text x="733" y="146" text-anchor="middle" font-size="13.5" font-weight="600">Confirm</text>
+      <text x="733" y="166" text-anchor="middle" font-size="11.5" fill="#0369a1">yes / no</text>
+    </g>
+    <g>
+      <rect x="828" y="118" width="104" height="64" rx="10" fill="#ffffff" stroke="#94a3b8"/>
+      <text x="880" y="146" text-anchor="middle" font-size="13.5" font-weight="600">Log</text>
+      <text x="880" y="166" text-anchor="middle" font-size="11.5" fill="#64748b">record</text>
+    </g>
+    <g stroke="#334155" stroke-width="2" fill="none">
+      <line x1="158" y1="150" x2="184" y2="150"/>
+      <line x1="318" y1="150" x2="344" y2="150"/>
+      <line x1="478" y1="150" x2="504" y2="150"/>
+      <line x1="638" y1="150" x2="664" y2="150"/>
+      <line x1="798" y1="150" x2="824" y2="150"/>
+    </g>
+    <g fill="#334155">
+      <polygon points="184,150 175,146 175,154"/>
+      <polygon points="344,150 335,146 335,154"/>
+      <polygon points="504,150 495,146 495,154"/>
+      <polygon points="664,150 655,146 655,154"/>
+      <polygon points="824,150 815,146 815,154"/>
+    </g>
+    <path d="M 880 182 C 880 240, 253 248, 253 186" stroke="#6366f1" stroke-width="2" fill="none" stroke-dasharray="7 5"/>
+    <polygon points="253,184 248,194 258,193" fill="#6366f1"/>
+    <text x="640" y="252" text-anchor="middle" font-size="12" fill="#4338ca">a “no”, or a silent timeout, sends the agent back to the plan</text>
+  </g>
+</svg>
