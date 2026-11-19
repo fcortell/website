@@ -101,5 +101,3 @@ What resonates most is the emphasis on maintaining human agency and critical thi
 **Related Reading:**
 - [Peter Steinberg's original post](https://steipete.me/posts/2025/essential-reading-july-2025) for the complete collection
 - [Essential Reading for Agentic Engineers - August 2025](https://steipete.me/posts/2025/essential-reading-august-2025) for continued insights
-
-**Tags:** #ai #development #claude #automation #productivity #agentic-coding
