@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Listed API price and modelled workload cost: Claude Opus 5.5 versus DeepSeek V4.1 Flash</title>
+  <desc id="d2">Per-million-token prices of 4 and 20 dollars against 0.30 and 1.20 dollars, and three modelled workloads where the cheap model costs roughly one thirteenth to one sixteenth as much.</desc>
+  <rect x="0" y="0" width="960" height="380" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" fill="#0f172a">
+    <text x="40" y="46" font-size="18" font-weight="600">What the difference costs</text>
+    <text x="40" y="70" font-size="13" fill="#64748b">Listed standard API rates · BenchLM, November 18, 2026</text>
+
+    <!-- left: per 1M tokens -->
+    <text x="60" y="112" font-size="14" font-weight="600">Per 1M tokens</text>
+    <g font-size="13">
+      <text x="60" y="140" fill="#475569">Input</text>
+      <rect x="150" y="126" width="420" height="16" rx="3" fill="#6366f1"/>
+      <text x="580" y="139" font-size="12.5" font-weight="600">$4.00</text>
+      <rect x="150" y="150" width="32" height="16" rx="3" fill="#0ea5e9"/>
+      <text x="190" y="163" font-size="12.5" font-weight="600">$0.30</text>
+
+      <text x="60" y="196" fill="#475569">Output</text>
+      <rect x="150" y="182" width="420" height="16" rx="3" fill="#6366f1"/>
+      <text x="580" y="195" font-size="12.5" font-weight="600">$20.00</text>
+      <rect x="150" y="206" width="25" height="16" rx="3" fill="#0ea5e9"/>
+      <text x="183" y="219" font-size="12.5" font-weight="600">$1.20</text>
+    </g>
+    <text x="60" y="244" font-size="12" fill="#64748b">13× cheaper on input · 16.7× cheaper on output</text>
+
+    <!-- right: workloads -->
+    <text x="620" y="112" font-size="14" font-weight="600">Modelled workloads</text>
+    <g font-size="12.5">
+      <text x="620" y="140" fill="#475569">Chat turn</text>
+      <text x="620" y="158" font-weight="600">$0.014 → $0.0009</text>
+
+      <text x="620" y="188" fill="#475569">Repository review (50K in / 3K out)</text>
+      <text x="620" y="206" font-weight="600">$0.26 → $0.0186</text>
+
+      <text x="620" y="236" fill="#475569">Cache-heavy agent loop</text>
+      <text x="620" y="254" font-weight="600">$0.32 → $0.0192</text>
+    </g>
+    <line x1="40" y1="286" x2="920" y2="286" stroke="#e2e8f0"/>
+    <text x="40" y="314" font-size="13" fill="#334155">A month of 10M input + 2M output tokens: $80 on Claude Opus 5.5, $5.40 on DeepSeek V4.1 Flash.</text>
+    <text x="40" y="340" font-size="12" fill="#64748b">DeepSeek sits on BenchLM's efficiency frontier: no cheaper model scores at least as high.</text>
+  </g>
+</svg>

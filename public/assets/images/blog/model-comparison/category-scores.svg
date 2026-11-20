@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="t1 d1">
+  <title id="t1">BenchLM category scores: Claude Opus 5.5 versus DeepSeek V4.1 Flash</title>
+  <desc id="d1">Grouped bars on a 0 to 100 scale for overall, coding, agentic, reasoning and multimodal categories: Claude leads each one, by between seven and eighteen points.</desc>
+  <rect x="0" y="0" width="960" height="420" rx="18" fill="#f8fafc" stroke="#e2e8f0"/>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" fill="#0f172a">
+    <text x="40" y="46" font-size="18" font-weight="600">BenchLM category scores</text>
+    <text x="40" y="70" font-size="13" fill="#64748b">0–100 scale · November 19, 2026 · like-for-like lanes</text>
+
+    <!-- legend -->
+    <rect x="640" y="34" width="14" height="14" rx="3" fill="#6366f1"/>
+    <text x="662" y="46" font-size="13">Claude Opus 5.5</text>
+    <rect x="800" y="34" width="14" height="14" rx="3" fill="#0ea5e9"/>
+    <text x="822" y="46" font-size="13">DeepSeek V4.1</text>
+
+    <!-- baseline and grid -->
+    <g stroke="#e2e8f0">
+      <line x1="150" y1="360" x2="930" y2="360"/>
+      <line x1="150" y1="300" x2="930" y2="300"/>
+      <line x1="150" y1="240" x2="930" y2="240"/>
+      <line x1="150" y1="180" x2="930" y2="180"/>
+      <line x1="150" y1="120" x2="930" y2="120"/>
+    </g>
+    <g font-size="11" fill="#94a3b8" text-anchor="end">
+      <text x="140" y="364">0</text><text x="140" y="304">25</text><text x="140" y="244">50</text>
+      <text x="140" y="184">75</text><text x="140" y="124">100</text>
+    </g>
+
+    <!-- bars: scale 0-100 over 240px => 2.4px per point, baseline y=360 -->
+    <g>
+      <!-- Overall -->
+      <rect x="175" y="162" width="46" height="198" rx="4" fill="#6366f1"/>
+      <text x="198" y="152" font-size="12" font-weight="600" text-anchor="middle">82.7</text>
+      <rect x="231" y="192" width="46" height="168" rx="4" fill="#0ea5e9"/>
+      <text x="254" y="182" font-size="12" font-weight="600" text-anchor="middle">69.9</text>
+      <text x="226" y="386" font-size="13" text-anchor="middle">Overall</text>
+
+      <!-- Coding -->
+      <rect x="335" y="148" width="46" height="212" rx="4" fill="#6366f1"/>
+      <text x="358" y="138" font-size="12" font-weight="600" text-anchor="middle">88.3</text>
+      <rect x="391" y="177" width="46" height="183" rx="4" fill="#0ea5e9"/>
+      <text x="414" y="167" font-size="12" font-weight="600" text-anchor="middle">76.4</text>
+      <text x="386" y="386" font-size="13" text-anchor="middle">Coding</text>
+
+      <!-- Agentic -->
+      <rect x="495" y="151" width="46" height="209" rx="4" fill="#6366f1"/>
+      <text x="518" y="141" font-size="12" font-weight="600" text-anchor="middle">87.3</text>
+      <rect x="551" y="195" width="46" height="165" rx="4" fill="#0ea5e9"/>
+      <text x="574" y="185" font-size="12" font-weight="600" text-anchor="middle">68.9</text>
+      <text x="546" y="386" font-size="13" text-anchor="middle">Agentic</text>
+
+      <!-- Reasoning -->
+      <rect x="655" y="166" width="46" height="194" rx="4" fill="#6366f1"/>
+      <text x="678" y="156" font-size="12" font-weight="600" text-anchor="middle">80.9</text>
+      <rect x="711" y="197" width="46" height="163" rx="4" fill="#0ea5e9"/>
+      <text x="734" y="187" font-size="12" font-weight="600" text-anchor="middle">67.8</text>
+      <text x="706" y="386" font-size="13" text-anchor="middle">Reasoning</text>
+
+      <!-- Multimodal -->
+      <rect x="815" y="166" width="46" height="194" rx="4" fill="#6366f1"/>
+      <text x="838" y="156" font-size="12" font-weight="600" text-anchor="middle">81.1</text>
+      <rect x="871" y="196" width="46" height="164" rx="4" fill="#0ea5e9"/>
+      <text x="894" y="186" font-size="12" font-weight="600" text-anchor="middle">68.5</text>
+      <text x="866" y="386" font-size="13" text-anchor="middle">Multimodal</text>
+    </g>
+  </g>
+</svg>
