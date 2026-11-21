@@ -13,7 +13,7 @@ The list, as far as I can reconstruct it from the feeds: Lucia, one of the two p
 
 ![Ocean Drive in Miami Beach at night, neon signs and palm trees reflected on the pavement](/assets/images/blog/gta6/miami-ocean-drive-night.jpg)
 
-*Vice City has always been Florida with the serial numbers filed off. Photo: [Dough4872](https://commons.wikimedia.org/wiki/File:Ocean_Drive_NB_past_10th_Street_Miami_Beach_at_night.jpeg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons.*
+*Vice City is Miami with the name changed. Photo: [Dough4872](https://commons.wikimedia.org/wiki/File:Ocean_Drive_NB_past_10th_Street_Miami_Beach_at_night.jpeg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons.*
 
 ## We wanted new, we got new, we objected
 
